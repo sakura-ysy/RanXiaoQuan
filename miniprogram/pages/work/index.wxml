@@ -1,0 +1,23 @@
+<image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 152@4x.png" class="back" mode="widthFix" bindtap="jump"></image>
+<scroll-view class="skill_all" scroll-y="true">
+    <image class="skill_img" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 192.png" mode="widthFix"></image>
+    <view class="first_para">
+        <view class="first_cha">苗</view>
+        族的蜡染，每一笔都有灵魂，每一个图案都有自己的故事。那些神秘图案符号有着其背后的意义——它不仅是美丽的点缀，还藏着苗族的神话、苗族的信仰和苗族的历史
+    </view>
+    <view class="second_para">
+        本期作品推荐的为湘西州苗族蜡染技艺传承人王曜的作品。王曜的作品登上了法国、荷兰、比利时、美国、德国等5个国家邮票，并在5个国家同步发行。
+    </view>
+    <image class="img" mode="widthFix" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 198@4x.png"></image>
+    <view class="title">王曜</view>
+    <view class="paragraph">王曜是湘西州非物质蜡染传承人，从事蜡染创作已经有30余年，王曜的蜡染作品画工细致精巧，既有原汁原味的淳朴，又符合现代人的审美。他对技艺毫无保留，心系传承，多年来培养了10多个徒弟，同时，王曜还不断通过参展等方式，与各地艺术爱好者交流学习，促进蜡染文化的传播。王曜此次登上5国邮票的19幅作品大多表现湘西独特的民族风情，同时通过绘画技艺的创新融合，形成了有别于传统蜡染的独特民族艺术风格。</view>
+    <view class="title">作品鉴赏</view>
+    <image class="img" mode="widthFix" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 197@4x.png"></image>
+    <image class="img" mode="widthFix" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 196@4x.png"></image>
+    <image class="img" mode="widthFix" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 195@4x.png"></image>
+    <view class="end_line">
+        <view class="left_line"></view>
+        <view class="end_text">THE END</view>
+        <view class="right_line"></view>
+    </view>
+</scroll-view>

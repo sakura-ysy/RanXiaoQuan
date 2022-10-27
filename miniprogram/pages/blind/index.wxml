@@ -1,0 +1,15 @@
+<view class="{{is_ball===0?'all':'all_2'}}"></view>
+<image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 152@4x.png" class="back" mode="widthFix" bindtap="jump"></image>
+<image class="machine" mode="widthFix" src="{{is_move===0?'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/a0090_1.png':'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/a0090_1.gif'}}"></image>
+<image class="{{is_ball===0?'ball':'ball_2'}}" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/1.png" mode="widthFix" bindtap="get_good"></image>
+<image class="point" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 235.png" mode="widthFix" bindtap="start"></image>
+
+<scroll-view class="{{is_modal===0?'randon_good_false':'randon_good'}}" scroll-y="true">
+    <view class="title">恭喜您获得盲盒物品</view>
+    <image class="photo" mode="widthFix" src="{{store[good_id].image[0]}}"></image>
+    <view class="brief">{{store[good_id].name}}</view>
+    <view class="btn">
+        <image class="cart" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 233.png" mode="widthFix" bindtap="in_cart"></image>
+        <image class="cancel" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 232.png" mode="widthFix" bindtap="cancel"></image>
+    </view>
+</scroll-view>

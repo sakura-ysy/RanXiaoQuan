@@ -1,0 +1,101 @@
+page {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("https://636c-cloud1-3gv71ub62b32f113-1312049560.tcb.qcloud.la/devImages/%E8%B5%84%E6%BA%90%20148%404x.png?sign=51e5a1b1d1cf179a61506861eebe03e5&t=1656387097");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.back {
+    width: 3vw;
+    position: fixed;
+    top: 7.5vh;
+    left: 7vw;
+}
+
+.pho {
+    width: 70%;
+    position: fixed;
+    right: 0vw;
+    top: 15vh;
+}
+
+.pic {
+    width: 40vw;
+    position: fixed;
+    left: 5vw;
+    top: 70vh;
+}
+
+.upload {
+    width: 40vw;
+    position: fixed;
+    right: 5vw;
+    top: 70vh;
+}
+
+.modal,.modal_false {
+    z-index: 5;
+    position: fixed;
+    width: 90vw;
+    height: 40vh;
+    left: 5vw;
+    top: 30vh;
+    background-color: white;
+    box-sizing: border-box;
+    padding-top: 1vh;
+    border-radius: 50rpx;
+    text-align: center;
+}
+
+.modal_false {
+    visibility: hidden;
+}
+
+.title {
+    font-size: 45rpx;
+    font-weight: 600;
+    color: rgb(15,15,76);
+    margin-bottom: 2vh;
+}
+
+.result {
+    text-align: center;
+    width: 80vw;
+    height: 24vh;
+    margin-bottom: 2vh;
+    margin-left: 5vw;
+}
+
+.cart {
+    width: 35vw;
+    margin-right: 5vw;
+}
+
+.cancel {
+    width: 23vw;
+    transform: translate(0,5%);
+}
+
+.all,.all_2 {
+    width: 100vw;
+    height: 100vh;
+    background:rgba(150,150,150,0.5);
+    position: fixed;
+    z-index: 2;
+}
+
+.all {
+    visibility: hidden;
+}
+
+.note {
+    position: fixed;
+    font-size: 35rpx;
+    font-weight: 600;
+    bottom: 10vh;
+    color: white;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}

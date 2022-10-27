@@ -1,0 +1,21 @@
+<image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 152@4x.png" class="back" mode="widthFix" bindtap="jump"></image>
+<text class="title">染小圈</text>
+<image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/my.png" class="my" mode="widthFix"></image>
+<image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/搜索图标@4x.png" class="search" mode="widthFix" bindtap="search"></image>
+<scroll-view scroll-y="true" class="circle_all">
+    <view class="single_post"
+        wx:for="{{myPostList}}"
+        wx:for-item="item1"
+        wx:for-index="index1"
+    >
+        <image class="post_img" src="{{item1.image[0]}}" mode="widthFix" bindtap="viewPost" data-item="{{item1}}"></image>
+        <view class="line1">
+            <input type="text" class="post_title" disabled="true" value="{{item1.title}}"/>
+            <image class="heart" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/喜欢2.png" mode="widthFix"></image>
+            <view class="like_num">{{item1.like_num>99?'99+':item1.like_num}}</view>
+        </view>
+        <image class="user_icon" src="{{item1.user_avatar}}" mode="widthFix"></image>
+        <input type="text" class="user_name" disabled="true" value="{{item1.user_nickname}}"/>
+        <image class="delete" mode="widthFix" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/删除.png" bindtap="deletPost" data-item="{{item1}}"></image>
+    </view>
+</scroll-view>

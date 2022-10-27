@@ -1,0 +1,40 @@
+<image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 152@4x.png" class="back" mode="widthFix" bindtap="jump"></image>
+<view class="title">订 单</view>
+<scroll-view class="all_view" scroll-y="true">
+    <view class="single_order"
+    wx:for="{{order}}"
+    wx:for-item="item1"
+    wx:for-index="index1"
+    >
+    <!-- 普通商品卡片 -->
+    <view wx:if="{{!item1.is_diy}}">
+        <image class="order_img" mode="aspectFill" src="{{item1.goods[0].image[0]}}"></image>
+        <view class="order_in">
+            <view class="order_name">{{item1.goods[0].name}}</view>
+            <view class="order_state">{{item1.status}}</view>
+            <view class="order_price">￥ {{item1.goods[0].price}}</view>
+        </view>
+        <view class="order_right">
+            <view class="right_text">卖家联系方式：</view>
+            <input type="text" class="phone" value="{{item1.goods[0].seller.mobile}}"/>
+            <image class="appeal" mode="widthFix" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/申诉.png" bindtap="show_msg" data-id="index1"></image>
+        </view>
+    </view>
+
+    <!-- DIY商品卡片 -->
+    <view wx:if="{{item1.is_diy}}">
+        <image class="order_img" mode="aspectFill" src="{{item1.diy_image}}"></image>
+        <view class="order_in">
+            <view class="order_name">DIY拍一拍</view>
+            <view class="order_state">{{item1.status}}</view>
+            <view class="order_price">￥ 待定</view>
+        </view>
+        <view class="order_right">
+            <view class="right_text">卖家联系方式：</view>
+            <input type="text" class="phone" value="待定"/>
+            <image class="appeal" mode="widthFix" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/申诉.png"></image>
+        </view>
+    </view>
+
+    </view>
+</scroll-view>

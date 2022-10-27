@@ -1,0 +1,25 @@
+<image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 152@4x.png" class="back" mode="widthFix" bindtap="jump"></image>
+<scroll-view class="skill_all" scroll-y="true">
+    <image class="skill_img" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 187.png" mode="widthFix"></image>
+    <view class="first_para">
+        <view class="first_cha">苗</view>
+        族蜡染技艺是中国的传统手工技艺之一。蜡染是贵州省丹寨县、安顺县、织金县苗族世代传承的传统技艺，古称“蜡缬”，苗语称“务图”，意为“蜡染服”。采用靛蓝染色的蜡染花布，青底白花，具有浓郁的民族风情和乡土气息，是中国独具一格的民族艺术之花。
+    </view>
+    <view class="second_para">2006年5月20日，苗族蜡染技艺经国务院批准列入第一批国家级非物质文化遗产名录。</view>
+    <view class="title">处理</view>
+    <view class="paragraph">先将自产的布用草灰漂白洗净，然后用煮熟的芋捏成糊状涂抹于布的反面，待晒干后用牛角磨平、磨光，石板即是天然的磨熨台。</view>
+    <view class="title">点蜡</view>
+    <view class="paragraph">把白布平帖在木板或桌面上，把蜂蜡放在陶瓷碗或金属罐里，用火盆里的木炭灰或糠壳火使蜡融化，便可以用铜刀蘸蜡，作画的第一步是经营位置。有的地区是照着纸剪的花样确定大轮廓，然后画出各种图案花纹。绘出大轮廓，便可以得心应手地画出各种美丽的图案。</view>
+    <image class="img" mode="widthFix" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 185@4x.png"></image>
+    <view class="title">染色</view>
+    <view class="paragraph">浸染的方法，是把画好的蜡片放在蓝靛染缸里，一般每一件需浸泡五、六天。第一次浸泡后取出晾干，便得浅蓝色。再放入浸泡数次，便得深蓝色。如果需要在同一织物上出现深浅两色的图案，便在第一次浸泡后，在浅蓝色上再点绘蜡花浸染，染成以后即现出深浅两种花纹。当蜡片放进染缸浸染时，有些"蜡封"因折叠而损裂，于是便产生天然的裂纹，一般称为"冰纹"。有时也根据需要做出"冰纹"。这种“冰纹”往往会使蜡染图案更加层次丰富，具有自然别致的风味。</view>
+    <image class="img" mode="widthFix" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 184@4x.png"></image>
+    <view class="title">去蜡</view>
+    <view class="paragraph">经过冲洗，然后用清水煮沸，煮去蜡质，经过漂洗后，布上就会显出蓝、白分明的花纹来。</view>
+    <image class="img" mode="widthFix" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 183@4x.png"></image>
+    <view class="end_line">
+        <view class="left_line"></view>
+        <view class="end_text">THE END</view>
+        <view class="right_line"></view>
+    </view>
+</scroll-view>

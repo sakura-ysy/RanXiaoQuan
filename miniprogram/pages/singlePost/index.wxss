@@ -1,0 +1,162 @@
+page {
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("https://636c-cloud1-3gv71ub62b32f113-1312049560.tcb.qcloud.la/devImages/%E8%B5%84%E6%BA%90%20149%404x(1).png?sign=09100efa955127f335831f81df12917f&t=1656386549");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.back {
+    width: 3vw;
+    position: fixed;
+    top: 6.5vh;
+    left: 7vw;
+}
+
+view.author {
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    top: 10vh;
+}
+
+.author_icon {
+    width: 13.5vw;
+    border-radius: 50%;
+    display: inline-block;
+    top:20rpx;
+    left: 5vw;
+    position: relative;
+}
+
+view.author_name {
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+    left: 7vw;
+    transform: translate(0,-15rpx);
+}
+
+.talk {
+    width:30vw;
+    position: fixed;
+    right: 5vw;
+    top: 12.2vh;
+}
+
+.show_pic {
+    width: 94%;
+    height: 27vh;
+    position:absolute;
+    top:20vh;
+    left: 3%;
+    text-align: center;
+}
+
+.content {
+    position:absolute;
+    top: 50vh;
+    left: 3%;
+    width: 96%;
+    height: 40vh;
+}
+
+.title {
+    font-size: 45rpx;
+    font-weight: 600;
+    margin-bottom: 10rpx;
+    padding-left: 0;
+}
+
+.content_text {
+    width: 96%;
+    margin-top: 7rpx;
+    font-size: 35rpx;
+    text-indent: 1.5em;
+    color:rgb(107, 104, 104);
+}
+
+.end_line {
+    height: 80rpx;
+    width: 100%;
+    margin-top: 30rpx;
+    box-sizing: border-box;
+    padding-left: 28%;
+}
+
+.end_text {
+    color:rgb(152,152,162);
+    font-size: 30rpx;
+    font-weight: 500;
+    display: inline-block;
+    margin-left: 10rpx;
+    margin-right: 10rpx;
+}
+
+.left_line,.right_line {
+    width: 100rpx;
+    height: 5rpx;
+    background-color: lightgrey;
+    display: inline-block;
+    transform: translate(0,-8rpx);
+}
+
+.bottom_menu {
+    height: 10vh;
+    width: 100%;
+    position: absolute;
+    top: 90vh;
+    border-top: 2rpx solid rgb(209, 206, 206);
+    box-sizing: border-box;
+    padding-left: 20rpx;
+    padding-top: 10rpx;
+}
+
+.browse_img {
+    position: fixed;
+    width: 10vw;
+    left: 8vw;
+    bottom: 4vh;
+}
+
+.browse_num {
+    position: fixed;
+    font-size: 35rpx;
+    font-weight: 500;
+    color: black;
+    left: 20vw;
+    bottom: 4.7vh;
+}
+
+.like_img {
+    position: fixed;
+    width: 9vw;
+    left: 40vw;
+    bottom: 4vh;
+}
+
+.like_num {
+    position: fixed;
+    font-size: 35rpx;
+    font-weight: 500;
+    color: black;
+    left: 53vw;
+    bottom: 4.7vh;
+}
+
+.collect_img {
+    position: fixed;
+    width: 9vw;
+    right: 20vw;
+    bottom: 4.2vh;
+}
+
+.collect_num {
+    position: fixed;
+    font-size: 35rpx;
+    font-weight: 500;
+    color: black;
+    right: 12vw;
+    bottom: 4.7vh;
+}

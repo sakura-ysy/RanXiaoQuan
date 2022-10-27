@@ -1,0 +1,15 @@
+<image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 152@4x.png" class="back" mode="widthFix" bindtap="jump"></image>
+<scroll-view class="skill_all" scroll-y="true">
+    <image class="skill_img" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 191.png" mode="widthFix"></image>
+    <view class="first_para">
+        <view class="first_cha">根</view>
+        据二仪实录记载，秦汉间已有染缬，六朝时开始流行，隋代宫廷特别喜爱这种手工艺品，并且出现特殊花样。至于实物的出土，比文献记载还要早的，有长沙战国楚墓出现一面染缬模样的被面，花纹不详。晋代也有一片成品出土，图案是重叠斑花，也就是唐宋时代所谓玛瑙缬。中国蜡染在唐代尤为盛行，技术也成熟多了。
+    </view>
+    <image class="img" mode="widthFix" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 200@4x.png"></image>
+    <view class="paragraph">当时的蜡染可分为两种：单色染与复色染；复色染可以套色四、五种之多。后人可从宋徽宗摹张萱捣练图中的两位妇女的衣裳及虢国夫人游春图中的几个骑马人物的衣服，窥见唐代蜡染图案之豪华美丽的情况。由于唐代中国文化对于日本影响颇大，奈良的正仓院，从唐代一直保存着各种唐代以来之中国工艺珍品，其中藏有一套蜡缬屏风，也是唐代由日本赴唐的留学和尚带回去的。蜡染在中国，自宋代以降开始衰退，而在同时的南洋各地（尤其爪哇、苏门答腊等岛）却大为盛行，至今，印度尼西亚与马来西亚人的平常衣服几乎都以蜡染布料制造。</view>
+    <view class="end_line">
+        <view class="left_line"></view>
+        <view class="end_text">THE END</view>
+        <view class="right_line"></view>
+    </view>
+</scroll-view>

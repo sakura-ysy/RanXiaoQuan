@@ -1,0 +1,30 @@
+<image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 152@4x.png" class="back" mode="widthFix" bindtap="jump"></image>
+<view class="author">
+    <image class="author_icon" mode="widthFix" src="{{seller_avatar}}"></image>
+    <view class="author_name">{{seller_nickname}}</view>
+    <image class="talk" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 224.png" mode="widthFix"></image>
+</view>
+<swiper class="show_pic" indicator-dots interval="2000">
+    <swiper-item wx:for="pic"  wx:for-index="index1">
+        <image src="{{pic[index1]}}"></image>
+    </swiper-item>
+</swiper>
+<scroll-view class="content" scroll-y="true">
+    <view class="title">{{title}}</view>
+    <view class="content_text">{{content}}</view>
+    <view class="msg">
+        <image class="sailed" mode="widthFix" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/已售出.png"></image>
+        <view class="out">{{out_num>99?'99+':out_num}}</view>
+        <image class="store" mode="widthFix" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/库存.png"></image>
+        <view class="in_store">{{in_store>99?'99+':in_store}}</view>
+    </view>
+    <view class="end_line">
+        <view class="left_line"></view>
+        <view class="end_text">THE END</view>
+        <view class="right_line"></view>
+    </view>
+</scroll-view>
+<view class="bottom_menu">
+    <image class="in_cart" mode="widthFix" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/加入购物车.png" bindtap="goin_cart"></image>
+    <image class="order" mode="widthFix" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/立即订购.png" bindtap="now_order"></image>
+</view>

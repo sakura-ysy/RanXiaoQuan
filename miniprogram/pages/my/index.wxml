@@ -1,0 +1,77 @@
+<!--pages/my/index.wxml-->
+<image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 220.png" mode="widthFix" class="{{swap===1?'arrow':swap===2?'arrow_m1':'arrow_m2'}}" bindtap="change_mode" wx:if="{{isLogin}}"></image>
+<image class="pub_good" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/发布商品.png" mode="widthFix" bindtap="upload_good" wx:if="{{isSeller}}"></image>
+<image class="upload_good" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 222.png" mode="widthFix" bindtap="modalinput" wx:if="{{isLogin & !isSeller}}"></image>
+
+<view class="{{req_mode===0?'gray2':'gray'}}"></view>
+
+<view class="{{req_mode===0?'input_modal2':'input_modal'}}">
+    <view class="modal_title">请输入您的信息</view>
+    <view class="inaddr">
+        <view class="addr_label">姓 名：</view>
+        <input bindinput="in_name" type='text' name="user_name" placeholder="请输入姓名" class="in_addr"    />
+    </view>
+    <view class="inname">
+        <view class="name_label">电 话：</view>
+        <input bindinput="in_phone" type='text' name="user_phone" placeholder="请输入电话"    class="in_name" />
+    </view>
+    <view class="inphone">
+        <view class="phone_label">微 信 号：</view>
+        <input bindinput="in_wx" type='text' name="user_wx" placeholder="请输入微信号"    class="in_phone" />
+    </view>
+    <view class="inphone">
+        <view class="phone_label">介 绍：</view>
+        <textarea bindinput="in_brief" type='text' name="user_brief" placeholder="请输入自我介绍与申请理由"    class="in_phone" > </textarea>
+    </view>
+    <image src="/images/cancel.png" mode="widthFix" class="cancel" bindtap="modalcancel"></image>
+    <image src="/images/confirm.png" mode="widthFix" class="confirm" bindtap="becomeSeller"></image>
+</view>
+
+
+<view class="all_box">
+    <button open-type="contact" class="{{swap===1?'kefu1':swap===2?'kefu2':'kefu1'}}"></button>
+    <!--点击这里进行登录-->
+    <view wx:if="{{!isLogin}}">
+        <image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/登录logo@4x.png" class="{{swap===1?'user_icon1':swap===2?'user_icon2':'user_icon3'}}" mode="widthFix" bindtap="login"></image>
+        <view class="{{swap===1?'user_name1':swap===2?'user_name2':'user_name3'}}">请点击登录</view>
+    </view>
+
+    <!--这是用户的头像和名字-->
+    <view wx:if="{{isLogin}}">
+        <image src="{{userInfo.avatarUrl}}" class="{{swap===1?'user_icon1':swap===2?'user_icon2':'user_icon3'}}" mode="widthFix"></image>
+        <view class="{{swap===1?'user_name1':swap===2?'user_name2':'user_name3'}}">{{userInfo.nickName}}</view>
+    </view>
+
+    <view class="{{swap===1?'index_head1':swap===2?'index_head2':'index_head3'}}">
+        <view class="{{swap===1?'head_top1':swap===2?'head_top2':'head_top3'}}">
+            <view class="left_circle">
+                <navigator style="flex: 1;padding: 5vw;" url="../order/index">
+                    <image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 133@4x.png" mode="widthFix" class="choose_it"></image>
+                </navigator>
+                <navigator style="flex: 1;padding: 5vw;" url="../address/index">
+                    <image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 225.png" mode="widthFix" class="choose_it"></image>
+                </navigator>
+                <navigator class="fabu" url="../publish/index">
+                    <image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 135@4x.png" mode="widthFix" class="choose_it"></image>
+                </navigator>
+                <navigator style="flex: 1;padding: 5vw;" url="../circle/index">
+                    <image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 136@4x.png" mode="widthFix" class="choose_it"></image>
+                </navigator>
+                <navigator style="flex: 1;padding: 5vw;">
+                    <image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 137@4x.png" mode="widthFix" class="choose_it"></image>
+                </navigator>
+            </view>
+        </view>
+        <view class="{{swap===1?'head_bottom1':swap===2?'head_bottom2':'head_bottom3'}}">
+            <scroll-view class="show_circle" scroll-y="true">
+                <view class="scroll-title">收藏夹</view>
+                <view class="single_post" wx:for="{{collectList}}" wx:key="index" wx:for-item="item" bindtap="viewPost" data-item="{{item}}">
+                    <image class="post_img" src="{{item.postInfo[0].image[0]}}" mode="widthFix"></image>
+                    <input type="text" class="post_title" disabled="true" value="{{item.postInfo[0].title}}" />
+                    <image class="user_icon" src="{{item.postInfo[0].user_avatar}}" mode="widthFix"></image>
+                    <input type="text" class="user_name" disabled="true" value="{{item.postInfo[0].user_nickname}}" />
+                </view>
+            </scroll-view>
+        </view>
+    </view>
+</view>

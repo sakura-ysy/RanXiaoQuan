@@ -1,0 +1,30 @@
+<image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 152@4x.png" class="back" mode="widthFix" bindtap="jump"></image>
+<view class="all">
+    <view class="put_image">
+        <!--选择tag-->
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class="picker">
+            请选择商品所属类型：
+            <view class="choose_one">{{array[index]}}</view>
+            </view>
+        </picker>
+        <!--输入商品价格-->
+        <input type="text" placeholder="请输入商品价格（单位：元）" class="good_price" bindinput="in_price"/>
+        <!--已上传图片-->
+        <image 
+        wx:for="{{images}}" wx:for-item="item1"
+        src="{{item1}}" class="image_in" mode="widthFix">
+        </image>
+        <!--点击上传图片-->
+        <image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/添加图片图标@4x.png" mode="widthFix" class="image_in"
+        bindtap="add_img"></image>
+    </view>
+    <!--标题-->
+    <input type="text" class="title" placeholder="请输入标题" bindinput="in_title" auto-focus/>
+    <view class="line"></view>
+    <!--内容-->
+    <textarea name="content" auto-focus auto-height class="content" placeholder="请输入内容" bindinput="in_content" maxlength="-1"></textarea>
+</view>
+
+<!--发布按钮-->
+<image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/发布按钮@4x.png" class="publish" mode="widthFix" bindtap="publish"></image>

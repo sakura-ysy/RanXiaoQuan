@@ -1,0 +1,76 @@
+<image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/搜索图标@4x.png" class="sousuo" mode="widthFix" bindtap="jump"></image>
+<image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 220.png" class="{{swap===1?'arrow':swap===2?'arrow_m1':'arrow_m2'}}" mode="widthFix" bindtap="change_mode"></image>
+<image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 221.png" class="book" mode="widthFix" bindtap="to_explain"></image>
+<view class="{{swap===1?'index_swiper':swap===2?'index_back':'index_small'}}">
+    <swiper class="first" indicator-dots autoplay interval="2000" indicator-color="rgba(255,255,255,0.3)"
+    indicator-active-color="#fff">
+        <swiper-item>
+            <image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/首页轮播1.png" mode="widthFix"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/首页轮播2.png" mode="widthFix" class="lunbo2"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/首页轮播3.png" mode="widthFix"></image>
+        </swiper-item>
+    </swiper>
+</view>
+<view class="index_head">
+ <view class="{{swap===1?'head_top':swap===2?'head_top_mode2':'head_top_mode1'}}">
+    <view class="left_circle">
+        <image src="{{nav===0?'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 144@4x.png':'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 140@4x.png'}}" class="choose_item" id="0" catchtap="changePicAndPost" data-serial="0" mode="widthFix"></image>
+        <image src="{{nav===1?'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 145@4x.png':'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 141@4x.png'}}" class="choose_item" id="1" catchtap="changePicAndPost" data-serial="1" mode="widthFix"></image>
+        <image src="{{nav===2?'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 146@4x.png':'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 142@4x.png'}}" class="choose_item" id="2" catchtap="changePicAndPost" data-serial="2" mode="widthFix"></image>
+        <image src="{{nav===3?'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 147@4x.png':'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 143@4x.png'}}" class="choose_item" id="3" catchtap="changePicAndPost" data-serial="3" mode="widthFix"></image>
+    </view>
+ </view>
+ <view class="{{swap===1?'head_bottom':swap===2?'head_bottom_mode2':'head_bottom_mode1'}}">
+    <view class="right_circle">
+    <swiper class="show_img" current="{{nav}}" bindchange="swipe">
+        <swiper-item>
+            <navigator url="../skill/index">
+                <image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/技艺.png" mode="widthFix"></image>
+            </navigator>
+        </swiper-item>
+        <swiper-item>
+            <navigator url="../tool/index">
+                <image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/工具.png" mode="widthFix"></image>
+            </navigator>
+        </swiper-item>
+        <swiper-item>
+            <navigator url="../work/index">
+                <image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/作品.png" mode="widthFix"></image>
+            </navigator>
+        </swiper-item>
+        <swiper-item>
+            <navigator url="../history/index">
+                <image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/历史.png" mode="widthFix"></image>
+            </navigator>
+        </swiper-item>
+    </swiper>
+    </view>
+ </view>
+</view>
+
+<scroll-view class="interchange" scroll-y="true">
+    <view class="scroll-title">染小圈</view>
+    <view class="two_side1" >
+        <view class="single_post" wx:for="{{evenList}}" wx:key="index" wx:for-item="item" bindtap="viewPost" data-item="{{item}}">
+            <image class="post_img" src="{{item.image[0]}}" mode="widthFix"></image>
+            <input type="text" class="post_title" disabled="true" value="{{item.title}}"/>
+            <image class="user_icon" src="{{item.user_avatar}}" mode="widthFix"></image>
+            <input type="text" class="user_name" disabled="true" value="{{item.user_nickname}}"/>
+        </view>
+    </view>
+
+    <view class="two_side2" >
+        <view class="single_post" wx:for="{{oddList}}" wx:key="index" wx:for-item="item" bindtap="viewPost" data-item="{{item}}">
+            <image class="post_img" src="{{item.image[0]}}" mode="widthFix"></image>
+            <input type="text" class="post_title" disabled="true" value="{{item.title}}"/>
+            <image class="user_icon" src="{{item.user_avatar}}" mode="widthFix"></image>
+            <input type="text" class="user_name" disabled="true" value="{{item.user_nickname}}"/>
+        </view>
+    </view>
+</scroll-view>
+
+      

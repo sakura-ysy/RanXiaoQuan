@@ -1,0 +1,70 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/photo/index",
+        "pages/blind/index",
+        "pages/work/index",
+        "pages/history/index",
+        "pages/singlePost/index",
+        "pages/singleGoods/index",
+        "pages/tool/index",
+        "pages/skill/index",
+        "pages/cart/index",
+        "pages/mall/index",
+        "pages/diy/index",
+        "pages/my/index",
+        "pages/search/index",
+        "pages/address/index",
+        "pages/publish/index",
+        "pages/order/index",
+        "pages/circle/index",
+        "pages/upgoods/index",
+        "pages/explain/index",
+        "pages/bmaptest/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#BA55D3",
+        "navigationBarTitleText": "染小圈",
+        "navigationBarTextStyle": "white",
+        "navigationStyle": "custom"
+    },
+    "tabBar": {
+        "color": "#999",
+        "selectedColor": "#0f0f4c",
+        "position": "bottom",
+        "borderStyle": "black",
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "images/首页logo未选中@4x.png",
+                "selectedIconPath": "images/首页logo选中@4x.png"
+            },
+            {
+                "pagePath": "pages/mall/index",
+                "text": "商城",
+                "iconPath": "images/商城logo_未选中@4x.png",
+                "selectedIconPath": "images/商城logo选中@4x.png"
+            },
+            {
+                "pagePath": "pages/diy/index",
+                "text": "DIY",
+                "iconPath": "images/DIYlogo未选中@4x.png",
+                "selectedIconPath": "images/DIYlogo选中@4x.png"
+            },
+            {
+                "pagePath": "pages/my/index",
+                "text": "我的",
+                "iconPath": "images/我的logo未选中@4x.png",
+                "selectedIconPath": "images/我的logo选中@4x.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json",
+    "style": "v2",
+    "permission": {
+        "scope.userLocation": {
+            "desc": "请允许我们获取您的位置信息"
+        }
+    }
+}

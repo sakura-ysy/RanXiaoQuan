@@ -1,0 +1,45 @@
+<image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 88@4x.png" class="back" mode="widthFix" bindtap="jump"></image>
+<text class="title">购物车</text>
+<scroll-view class="cart" scroll-y="true">
+    <view class="single_good"
+    wx:for="{{good}}"
+    wx:for-item="item1" 
+    wx:for-index="index1"
+    >
+    <!-- 普通商品的卡片 -->
+    <view wx:if="{{!item1.is_diy}}">
+    <image class="good_img" mode="widthFix" src="{{item1.good[0].image[0]}}" bindtap="view" data-item="{{item1}}"> </image>
+        <view class="right_text">
+            <view class="good_title">{{item1.good[0].name}}</view>
+            <view class="price">￥{{item1.good[0].price}}</view>
+            <view class="bottom_one">
+                <image class="is_choose" mode="widthFix" src="{{item1.choose===true?'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/选择2.png':'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/选择.png'}}"></image>
+                <view class="choose" bindtap="chooseOne" data-id="{{index1}}">选择</view>
+                <view class="delete" bindtap="deleteOne" data-id="{{index1}}">移除商品</view>
+            </view>
+        </view>
+    </view>
+
+    <!-- DIY商品的卡片 -->
+    <view wx:if="{{item1.is_diy}}">
+    <image class="good_img" mode="widthFix" src="{{item1.diy_image}}"> </image>
+        <view class="right_text">
+            <view class="good_title">DIY 拍一拍</view>
+            <view class="price">￥待定</view>
+            <view class="bottom_one">
+                <image class="is_choose" mode="widthFix" src="{{item1.choose===true?'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/选择2.png':'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/选择.png'}}"></image>
+                <view class="choose" bindtap="chooseOne" data-id="{{index1}}">选择</view>
+                <view class="delete" bindtap="deleteOne" data-id="{{index1}}">移除商品</view>
+            </view>
+        </view>
+    </view>
+
+
+    </view>
+</scroll-view>
+<view class="bottom_menu">
+    <image src="{{choose_num===good.length ?'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/选择2.png':'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/选择.png'}}" class="choose_all" mode="widthFix"></image>
+    <text class="choose_text" bindtap="chooseAll">全选</text>
+    <text class="cancel_text" bindtap="cancelAll">取消选择</text>
+    <image class="send" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/结算按钮2.png" mode="widthFix" bindtap="publish"></image>
+</view>

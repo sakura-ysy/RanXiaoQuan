@@ -1,0 +1,124 @@
+page {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-image: url("https://636c-cloud1-3gv71ub62b32f113-1312049560.tcb.qcloud.la/devImages/%E8%B5%84%E6%BA%90%20149%404x(1).png?sign=09100efa955127f335831f81df12917f&t=1656386549");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.back {
+    width: 3vw;
+    position: fixed;
+    top: 7.5vh;
+    left: 7vw;
+}
+
+.machine {
+    width: 80%;
+    position: fixed;
+    top: 11vh;
+    left: 10vw;
+    border-radius: 30rpx;
+}
+
+@keyframes ball_move {
+    0% {
+        width: 5vw;
+        left: 50vw;
+        top: 40vh;
+        transform: translate(-50%,0);
+    }
+    100% {
+        width: 90vw;
+        left: 50vw;
+        top: 0vh;
+        transform: translate(-46%,0);
+    }
+}
+
+.ball {
+    position: fixed;
+    z-index: 10;
+    width: 5vw;
+    left: 50vw;
+    top: 40vh;
+    transform: translate(-46%,0);
+    visibility: hidden;
+}
+
+.ball_2 {
+    position: fixed;
+    z-index: 10;
+    animation-name: ball_move;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    visibility:visible;
+}
+
+.all,.all_2 {
+    width: 100vw;
+    height: 100vh;
+    background:rgba(150,150,150,0.5);
+    position: fixed;
+    z-index: 2;
+}
+
+.all {
+    visibility: hidden;
+}
+
+.point {
+    width: 90%;
+    left: 5vw;
+    position: fixed;
+    bottom: 3vh;
+}
+
+.randon_good,.randon_good_false {
+    position: fixed;
+    width: 90vw;
+    height: 40vh;
+    top: 30vh;
+    z-index: 10;
+    left: 5vw;
+    border-radius: 50rpx;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: white;
+    padding-top: 0.5vh;
+    overflow: hidden;
+}
+
+.randon_good_false {
+    visibility: hidden;
+}
+
+.title {
+    font-size: 45rpx;
+    font-weight: 600;
+    color: rgb(15,15,76);
+    margin-bottom: 2vh;
+}
+
+.photo {
+    width: 70%;
+    border-radius: 20rpx;
+}
+
+.brief {
+    font-size: 40rpx;
+    font-weight: 500;
+    color: rgb(15,15,76);
+    margin-bottom: 2vh;
+}
+
+.cart {
+    width: 35vw;
+    margin-right: 5vw;
+}
+
+.cancel {
+    width: 23vw;
+    transform: translate(0,5%);
+}

@@ -1,0 +1,88 @@
+page {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-image: url("https://636c-cloud1-3gv71ub62b32f113-1312049560.tcb.qcloud.la/devImages/%E8%B5%84%E6%BA%90%20149%404x(1).png?sign=09100efa955127f335831f81df12917f&t=1656386549");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.back {
+    width: 3vw;
+    position: fixed;
+    top: 7.5vh;
+    left: 7vw;
+}
+
+.all {
+    width: 90%;
+    height: 77vh;
+    left: 5vw;
+    top: 12vh;
+    position: absolute;
+}
+
+.picker {
+    margin-left: 2vw;
+    margin-bottom: 2vh;
+    font-size: 35rpx;
+    font-weight: 600;
+    color: rgb(15,15,76);
+}
+
+.choose_one {
+    display: inline-block;
+    border: rgb(15,15,76) solid 2rpx;
+    border-radius: 5rpx;
+    box-sizing: border-box;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.put_image {
+    width: 100%;
+    height: auto;
+}
+
+.image_in {
+    height: 25vw;
+    width: 25vw;
+    overflow: hidden;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.title {
+    width: 87%;
+    height: 3vh;
+    color: rgb(150,150,161);
+    font-size: 45rpx;
+    font-weight: bold;
+    margin-top: 3vh;
+    margin-left: 2vw;
+    margin-bottom: 2vh;
+}
+
+.line {
+    width: calc(100%-3vw);
+    height: 0.3vh;
+    background-color: rgb(188,188,194);
+    margin-left: 2vw;
+}
+
+.content {
+    width: 100%;
+    height: 50vh;
+    margin-left: 2vw;
+    margin-top: 2vh;
+    color: rgb(150,150,161);
+    font-size: 36rpx;
+    font-weight: 400;
+}
+
+.publish {
+    width: 80%;
+    left: 10vw;
+    bottom: 3vh;
+    position: fixed;
+}

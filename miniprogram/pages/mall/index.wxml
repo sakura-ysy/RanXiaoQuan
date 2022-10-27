@@ -1,0 +1,36 @@
+<!--pages/mall/index.wxml-->
+<view class="{{is_in===0?'all':'all_2'}}">
+    <image class="mall_text" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/蜡染商城@4x.png" mode="widthFix"></image>
+    <image class="btn" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 156@4x.png" mode="widthFix" bindtap="buy"></image>
+    <image class="photo" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/商城起始页底图.png" mode="widthFix"></image>
+</view>
+<image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/搜索图标@4x.png" mode="widthFix" class="sousuo" bindtap="jump"></image>
+<view class="head">
+    <image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/购物车.png" mode="widthFix" class="buycar" bindtap="cart"></image>
+</view>
+<view class="mall">
+    <view class="mall-head">
+        <image class="mall-title" mode="widthFix" src="{{currentIndex==0?'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 166@4x.png':'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 162@4x.png'}}" bindtap="handleIndex" data-index="0"></image>
+        <image class="mall-title" mode="widthFix" src="{{currentIndex==1?'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 165@4x.png':'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 161@4x.png'}}" bindtap="handleIndex" data-index="1"></image>
+        <image class="mall-title" mode="widthFix" src="{{currentIndex==2?'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 164@4x.png':'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 160@4x.png'}}" bindtap="handleIndex" data-index="2"></image>
+        <image class="mall-title" mode="widthFix" src="{{currentIndex==3?'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 163@4x.png':'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 159@4x.png'}}" bindtap="handleIndex" data-index="3"></image>
+    </view>
+    <view class="goods_list">
+        <scroll-view class="goods" scroll-y="true">
+            <view class="goods_single" wx:for="{{menu_goods}}" wx:for-item="item1" wx:for-index="index1">
+                <image class="good_img" src="{{item1.image[0]}}" mode="widthFix"></image>
+                <view class="good_in" bindtap="view" data-item="{{item1}}">
+                    <view class="goods_name">{{item1.name}}</view>
+                    <view class="goods_sail">已售{{item1.sold_num}}件</view>
+                    <view class="goods_price">￥ {{item1.price}}</view>
+                </view>
+                <image class="add_good" src="{{item1.is_add== true?'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/减号.png':'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/加号.png'}}" mode="widthFix" bindtap="add_good" data-id="{{index1}}"></image>
+            </view>
+        </scroll-view>
+    </view>
+</view>
+<view class="buy_thing {{num===0?'buy_thing_hide':''}}" wx:if="{{num!=0}}">
+    <image class="minus" bindtap="minus_good" mode="widthFix" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/减法2.png"></image>
+    <view class="text_msg">已选择{{show_num}}件</view>
+    <image class="confirm" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/购物车按钮.png" mode="widthFix" bindtap="cart"></image>
+</view>

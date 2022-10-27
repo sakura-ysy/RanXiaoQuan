@@ -1,0 +1,293 @@
+page {
+    height: 100vh;
+    overflow: hidden;
+}
+
+view.index_swiper {
+    width: 100%;
+    height: 80vh;
+}
+
+.sousuo {
+    top: 5.5vh;
+    left: 5vw;
+    position: fixed;
+    z-index: 5;
+    width: 10vw;
+}
+
+@keyframes arrow_mode1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes arrow_mode2 {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.arrow,.arrow_m1,.arrow_m2 {
+    top: 5.5vh;
+    left: 29vw;
+    position: fixed;
+    z-index: 5;
+    width: 10vw;
+}
+
+.arrow_m1 {
+    animation-name: arrow_mode2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.arrow_m2 {
+    animation-name: arrow_mode1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.book {
+    top: 5.5vh;
+    left: 17vw;
+    position: fixed;
+    z-index: 5;
+    width: 10vw;
+}
+
+@keyframes swiper_up {
+    0% {
+        height: 80vh;
+    }
+    100% {
+        height: 19vh;
+    }
+}
+
+@keyframes swiper_back {
+    0% {
+        height: 19vh;
+    }
+    100% {
+        height: 80vh;
+    }
+}
+
+image {
+    width: 100%;
+}
+
+view.index_small {
+    width: 100%;
+    animation-name: swiper_up;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.first .wx-swiper-dots.wx-swiper-dots-horizontal{
+    margin-bottom: 60rpx;
+  }
+  
+
+view.index_back{
+    width: 100%;
+    animation-name: swiper_back;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.first {
+    width: 100%;
+    height: 100%;
+}
+
+view.index_head {
+    height: 43vh;
+    width: 100%;
+    overflow: hidden;
+    border-top-left-radius: 60rpx;
+    border-top-right-radius: 60rpx;
+    transform: translate(0,-4vh);
+    background: url("https://636c-cloud1-3gv71ub62b32f113-1312049560.tcb.qcloud.la/devImages/%E5%BA%95%E5%9B%BE%404x.png?sign=85a87d9eefaae2655357a144d5b0a19a&t=1656385871");
+    background-size:100%;
+}
+
+view.head_top {
+    height: 34.4%;
+    width: 200%;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%,0);
+    z-index: 5;
+}
+
+@keyframes mode1 {
+    0% {
+        transform: translate(-50%,0);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
+
+@keyframes mode2 {
+    0% {
+        transform: translate(0,0);
+    }
+    100% {
+        transform: translate(-50%,0);
+    }
+}
+
+.head_top_mode1 {
+    height: 34.4%;
+    width: 200%;
+    justify-content: center;
+    align-items: center;
+    animation-name: mode1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+.head_top_mode2 {
+    height: 34.4%;
+    width: 200%;
+    justify-content: center;
+    align-items: center;
+    animation-name: mode2;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+.left_circle {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(32,32,119);
+    display: inline-block;
+    display: flex;
+}
+
+.choose_item {
+    display: inline-block;
+    flex: 1;
+    padding: 7vw;
+    width: 100%;
+}
+
+view.head_bottom {
+    height: 65.6%;
+    width: 200%;
+    justify-content: center;
+    align-items: center;
+}
+
+view.head_bottom_mode1 {
+    height: 65.6%;
+    width: 200%;
+    justify-content: center;
+    align-items: center;
+    animation-name: mode2;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+view.head_bottom_mode2 {
+    height: 65.6%;
+    width: 200%;
+    justify-content: center;
+    align-items: center;
+    animation-name: mode1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+.right_circle {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(32,32,119);
+    transform: translate(100%,0);
+    display: inline-block;
+}
+
+.show_img {
+    width: 90%;
+    height: 90%;
+    border-radius: 50rpx;
+    margin: auto;
+    margin-top: 3%;
+}
+
+.interchange {
+    height: 42%;
+    width: 100%;
+    background-image: url("https://636c-cloud1-3gv71ub62b32f113-1312049560.tcb.qcloud.la/devImages/%E8%B5%84%E6%BA%90%20173%404x.png?sign=3ba2f86684e5d8326819e3a647301d65&t=1656385957");
+    background-size:100%;
+    transform: translate(0,-4.1vh);
+}
+
+.scroll-title {
+    margin-left: 5vw;
+    font-size: 50rpx;
+    font-weight: 600;
+    color: white;
+}
+
+.two_side1 {
+    width: 40%;
+    height: auto;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.two_side2 {
+    width: 40%;
+    height: auto;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.single_post {
+    width: 100%;
+    height: auto;
+    margin-top: 1vh;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.post_img {
+    width: 100%;
+    border-radius: 20rpx;
+}
+
+.post_title {
+    font-size: 37rpx;
+    font-weight: 600;
+    color: white;
+}
+
+.user_icon {
+    width: 25%;
+    display: inline-block;
+}
+
+.user_name {
+    width: 70%;
+    display: inline-block;
+    font-size: 35rpx;
+    font-weight: 500;
+    color: white;
+    margin-left: 5%;
+    transform: translate(0,-40%);
+}
+

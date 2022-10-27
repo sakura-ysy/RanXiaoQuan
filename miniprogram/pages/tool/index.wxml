@@ -1,0 +1,21 @@
+<image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 152@4x.png" class="back" mode="widthFix" bindtap="jump"></image>
+<scroll-view class="skill_all" scroll-y="true">
+    <image class="skill_img" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 193.png" mode="widthFix"></image>
+    <view class="first_para">
+        <view class="first_cha">蜡</view>
+        染是用蜡刀蘸蜡液，在白布上描绘几何图案或花、鸟、虫、鱼等纹样，然后浸入靛缸(以蓝色为主)，用水煮脱蜡即现花纹。结构严谨，线条流畅，装饰趣味很强，具有鲜明的民族风格。以蓝靛浸染，既染去蜡，布面就呈现出蓝底白花或白底蓝花的多种图案，同时，在浸染中，作为防染剂的蜡自然龟裂，使布面呈现特殊的“冰纹”，尤具魅力。由于蜡染图案丰富，色调素雅，风格独特，用于制作服装服饰和各种生活实用品，显得朴实大方、清新悦目，富有民族特色。贵州、云南苗族、布依族等民族擅长蜡染。
+    </view>
+    <view class="title">蜡刀</view>
+    <view class="paragraph">绘制蜡花的工具不是毛笔，而是一种自制的钢刀。因为用毛笔蘸蜡容易冷却凝固， 而钢制的画刀便于保温。这种钢刀是用两片或多片形状相同的薄铜片组成，一端缚在木柄上。刀口微开而中间略空，以易于蘸蓄蜂蜡。根据绘画各种线条的需要，有不同规格的铜刀，一般有半圆形、三角形、斧形等。</view>
+    <image class="img" mode="widthFix" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 190@4x.png"></image>
+    <view class="title">原料</view>
+    <view class="paragraph">自织白棉布</view>
+    <view class="title">染料</view>
+    <view class="paragraph">染料蜡染的基本原理是在需要白色花型的地方涂抹蜡质（古代是蜂蜡，现代是石蜡、蜂蜡、木蜡等混合蜡），然后去染色，将没有涂蜡的地方染成蓝色，有蜡的地方因为没有上色而呈现白色，行话叫做“留白”。但是无论哪种蜡，在高温下都会融化，因此用于蜡染的染料只能在低温下染布，否则蜡一融化，就无法留白了。但是古代没有化学染料，只有天然植物染料，能满足低温染色的只有靛蓝一种。当然，可以制作靛蓝的植物油多种，比如蓼科的蓼蓝、十字花科的菘蓝、豆科的木蓝等多种植物茎叶都可以发酵制造靛蓝染料。</view>
+    <image class="img" mode="widthFix" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 189@4x.png"></image>
+    <view class="end_line">
+        <view class="left_line"></view>
+        <view class="end_text">THE END</view>
+        <view class="right_line"></view>
+    </view>
+</scroll-view>

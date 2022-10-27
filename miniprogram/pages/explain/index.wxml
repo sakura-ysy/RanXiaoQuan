@@ -1,0 +1,23 @@
+<image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 152@4x.png" class="back" mode="widthFix" bindtap="jump"></image>
+<scroll-view class="skill_all" scroll-y="true">
+    <view class="explain">说明文档</view>
+    <view class="title">标识说明</view>
+    <image class="biaoshi" mode="widthFix" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/arrow.png"></image>
+    <view class="text_range">“箭头”标识处（见上图）点击之后即会切换页面的模式，可以看到更详细的信息（“我的”界面处同理）</view>
+    <image class="biaoshi" mode="widthFix" src='cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 222.png'></image>
+    <view class="text_range">“发布”标识处（见上图）点击之后会要求用户填写一系列的信息，这个标识是提供给想要成为商家的用户的，填写了相应信息后，我们的后台会对您本人进行信息核实，核实完成后即可联系后台人员发布您想要售卖的商品。</view>
+    <image class="biaoshi" mode="widthFix" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/发布商品.png"></image>
+    <view class="text_range">“发布商品”标识处（见上图）点击之后会给商家账号自动发布商品的页面，商家输入对应信息后，后天会进行人工审核，如果审核通过才会将其展示到商城中。<text style="color: deepskyblue;">注意：</text>必须是已经成为商家账户的账号才有权力进入发布商品的界面</view>
+    <view class="title">商城说明</view>
+    <view class="text_range">由于微信小程序的上线规定，此小程序商城暂不提供直接交易的接口，而采取另一种规则，即用户点击“发布订购消息”之后，小程序后台会记录此订购消息，由维护者对该订购消息进行向对应商家的消息发送，使得用户能与商家在小程序下取得联系，完成交易。</view>
+    <view class="text_range">如果订单出现问题，用户可以在“订单”栏中进行申诉，会由我们来对商家进行沟通。</view>
+    <view class="title">DIY说明</view>
+    <view class="text_range">此小程序为用户提供了一个DIY蜡染的模式，用户可以将符合条件的图片进行上传，小程序会将其处理为蜡染图案，如果用户满意，那么点击“加入购物车”后即可订购以该图案为主的商品。在DIY的另一栏中，我们还为用户提供了时下最流行的盲盒机制，其中内嵌了我们自己设计的蜡染产品，开到的商品并且满意的用户同样也可以对其进行订购。</view>
+    <view class="title">圈子说明</view>
+    <view class="text_range">“圈子”即是此小程序的一个特色，在圈子中用户可以发布<text style="color:deepskyblue;">与蜡染有关</text>的主题界面，其中圈子的具体分类包括蜡染技艺、蜡染工具、蜡染作品和蜡染的历史，旨在为喜爱蜡染的用户提供一个良好的交流平台，希望各用户能自觉遵守圈子的发帖原则</view>
+    <view class="end_line">
+        <view class="left_line"></view>
+        <view class="end_text">THE END</view>
+        <view class="right_line"></view>
+    </view>
+</scroll-view>

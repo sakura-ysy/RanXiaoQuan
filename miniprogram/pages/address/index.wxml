@@ -1,0 +1,74 @@
+<image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 152@4x.png" class="back" mode="widthFix" bindtap="jump"></image>
+<scroll-view class="addr_all">
+    <view wx:for="{{addr}}" wx:for-item="item1" wx:for-index="index1" class="{{index1%2===0?'addr1':'addr2'}}">
+        <view class="left_side">
+            <view type="text" class="addr_single_pro">{{item1.province}} {{item1.city}} {{item1.district}}</view>
+            <view type="text" class="addr_single_msg">{{item1.address}}</view>
+            <view type="text" class="name">{{item1.name}}</view>
+            <view type="text" class="phone">{{item1.mobile}}</view>
+        </view>
+        <view class="right_side">
+            <image src="{{index1%2===0?'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/白叉.png':'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/黑叉.png'}}" mode="widthFix" class="cha" bindtap="delete" data-id="{{index1}}"></image>
+            <image src="{{index1%2===0?'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/白勾.png':'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/黑勾.png'}}" mode="widthFix" data-id="{{index1}}" class="gou" bindtap="select" data-item="{{item1}}"></image>
+            <image src="{{index1%2===0?'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/填写图标_2@4x.png':'cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/填写图标_1@4x.png'}}" class="pencil" mode="widthFix" bindtap="edit_addr" data-id="{{index1}}"></image>
+        </view>
+    </view>
+</scroll-view>
+
+<view class="{{add_mode===0?'gray2':'gray'}}"></view>
+<view class="{{edit_mode===0?'gray2':'gray'}}"></view>
+
+<!-- 增加地址输入框 -->
+<view class="{{add_mode===0?'input_modal2':'input_modal'}}" wx:if="{{add_mode===1}}">
+    <view class="modal_title">请输入相应信息</view>
+    <picker mode="region" bindchange="getUserProvince" class="user_pick">
+        <view class="picker">
+            省、市、区：
+            <view class="choose_one">{{region}}</view>
+        </view>
+    </picker>
+    <view class="inaddr">
+        <view class="addr_label">详细地址：</view>
+        <input bindinput="in_addr" type='text' name="user_addr" class="in_addr" placeholder="请输入地址" value="{{temp_addr}}" />
+    </view>
+    <view class="inname">
+        <view class="name_label">姓 名：</view>
+        <input type="text" class="in_name" bindinput="in_name" name="user_name" placeholder="请输入姓名" value="{{temp_name}}" />
+    </view>
+    <view class="inphone">
+        <view class="phone_label">电 话：</view>
+        <input bindinput="in_phone" type='text' name="user_phone" class="in_phone" placeholder="请输入电话" value="{{temp_phone}}" />
+    </view>
+    <image class="inv" src="/images/locate.png" mode="widthFix" bindtap="locate"></image>
+    <image src="/images/cancel.png" mode="widthFix" class="cancel" bindtap="add_cancel"></image>
+    <image src="/images/confirm.png" mode="widthFix" class="confirm" bindtap="add_confirm"></image>
+</view>
+
+<!-- 编辑地址输入框 -->
+<view class="{{edit_mode===0?'input_modal2':'input_modal'}}">
+    <view class="modal_title">请输入相应信息</view>
+    <picker mode="region" bindchange="getUserProvince" class="user_pick">
+        <view class="picker">
+            省、市、区：
+            <view class="choose_one">{{region}}</view>
+        </view>
+    </picker>
+    <view class="inaddr">
+        <view class="addr_label">详细地址：</view>
+        <input bindinput="in_addr" type='text' name="user_addr" class="in_addr" placeholder="请输入地址" value="{{temp_addr}}" />
+    </view>
+    <view class="inname">
+        <view class="name_label">姓 名：</view>
+        <input type="text" class="in_name" bindinput="in_name" name="user_name" placeholder="请输入姓名" value="{{temp_name}}" />
+    </view>
+    <view class="inphone">
+        <view class="phone_label">电 话：</view>
+        <input bindinput="in_phone" type='text' name="user_phone" class="in_phone" placeholder="请输入电话" value="{{temp_phone}}" />
+    </view>
+    <image class="inv" src="/images/locate.png" mode="widthFix" bindtap="locate"></image>
+    <image src="/images/cancel.png" mode="widthFix" class="cancel" bindtap="edit_cancel"></image>
+    <image src="/images/confirm.png" mode="widthFix" class="confirm" bindtap="edit_confirm"></image>
+</view>
+
+
+<image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/新增地址按钮@4x.png" class="new_one" mode="widthFix" bindtap="add_addr"></image>

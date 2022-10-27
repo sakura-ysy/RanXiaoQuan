@@ -1,0 +1,102 @@
+// pages/diy/index.js
+Page({
+
+    /**
+     * 页面的初始数据
+     */
+    data: {
+        //模式转变
+        swap:1
+    },
+
+    /**
+     * 生命周期函数--监听页面加载
+     */
+    onLoad(options) {
+
+    },
+
+    /**
+     * 生命周期函数--监听页面初次渲染完成
+     */
+    onReady() {
+
+    },
+
+    /**
+     * 生命周期函数--监听页面显示
+     */
+    onShow() {
+
+    },
+
+    /**
+     * 生命周期函数--监听页面隐藏
+     */
+    onHide() {
+
+    },
+
+    /**
+     * 生命周期函数--监听页面卸载
+     */
+    onUnload() {
+
+    },
+
+    /**
+     * 页面相关事件处理函数--监听用户下拉动作
+     */
+    onPullDownRefresh() {
+
+    },
+
+    /**
+     * 页面上拉触底事件的处理函数
+     */
+    onReachBottom() {
+
+    },
+
+    /**
+     * 用户点击右上角分享
+     */
+    onShareAppMessage() {
+
+    },
+
+    change_mode(e) {
+        if(this.data.swap == 1)
+        {
+            this.setData({
+                swap:2
+            })
+        }
+    },
+
+    //进入拍一拍界面
+    in_photo(e) {
+        wx.navigateTo({
+            url: '../photo/index',
+            success: function(res) {
+            },
+            fail: function(res) {
+            },
+            complete: function(res) {
+            },
+        });
+    },
+
+    //进入扭一扭界面
+    in_blind(e) {
+        wx.navigateTo({
+            url: '../blind/index',
+            success: function(res) {
+            },
+            fail: function(res) {
+            },
+            complete: function(res) {
+            },
+        });
+    }
+})

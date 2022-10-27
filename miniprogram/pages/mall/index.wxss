@@ -1,0 +1,222 @@
+/* pages/mall/index.wxss */
+page {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.all {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://636c-cloud1-3gv71ub62b32f113-1312049560.tcb.qcloud.la/devImages/%E8%B5%84%E6%BA%90%20148%404x.png?sign=8f984ba5794b2ef3918a254b0d943f29&t=1656386891");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+@keyframes dur {
+    0% {
+        z-index: 100;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-image: url("https://636c-cloud1-3gv71ub62b32f113-1312049560.tcb.qcloud.la/devImages/%E8%B5%84%E6%BA%90%20148%404x.png?sign=8f984ba5794b2ef3918a254b0d943f29&t=1656386891");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        opacity: 1;
+    }
+    100% {
+        z-index: -5;
+        opacity: 0;
+    }
+}
+
+.all_2 {
+    animation-name: dur;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.mall_text {
+    position: fixed;
+    width: 55vw;
+    left: 5vw;
+    top: 20vh;
+    opacity: inherit;
+}
+
+.btn {
+    position: fixed;
+    width: 50vw;
+    left: 7.5vw;
+    top: 35vh;
+    opacity: inherit;
+}
+
+.photo {
+    position: fixed;
+    width: 90vw;
+    right: 0;
+    bottom: 0;
+    opacity: inherit;
+}
+
+.sousuo {
+    top: 5.5vh;
+    left: 5vw;
+    position: fixed;
+    z-index: 5;
+    width: 10vw;
+}
+
+view.head {
+    z-index: -1;
+    background-image: url("https://636c-cloud1-3gv71ub62b32f113-1312049560.tcb.qcloud.la/devImages/%E5%95%86%E5%9F%8E%E6%97%B6%E5%B0%9A%E5%8D%95%E5%93%81%E5%BA%95%E5%9B%BE.png?sign=7416bfe333f33f1e8db2513c1733754d&t=1656387006");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+}
+
+.buycar {
+    z-index: 2;
+    position: fixed;
+    width: 13vw;
+    right: 2vw;
+    top: 17vh;
+}
+
+view.mall {
+    z-index: 2;
+  border-top-left-radius: 40rpx;
+  border-top-right-radius: 40rpx;
+  transform: translate(0,-5vh);
+  background-image: url("https://636c-cloud1-3gv71ub62b32f113-1312049560.tcb.qcloud.la/devImages/%E8%B5%84%E6%BA%90%20148%404x.png?sign=8f984ba5794b2ef3918a254b0d943f29&t=1656386891");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+view.mall-head {
+  width: 100%;
+  height: 4.8077vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 40rpx;
+  border-top-right-radius: 40rpx;
+  background-color: rgb(29,29,119);
+  display: flex;
+}
+
+.mall-title {
+    flex: 1;
+    padding: 20rpx;
+    transform: translate(0,1vh);
+}
+
+view.goods_list {
+    height: 81.73vh;
+    width: 100%;
+}
+
+.goods {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.goods_single {
+    z-index: 2;
+  height: 12vh;
+  width: 90%;
+  margin: 5vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.good_img {
+    display: inline-block;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 5rpx;
+    overflow: hidden;
+}
+
+.good_in {
+    height: 10vh;
+    display: inline-block;
+    width: 55vw;
+    margin-left: 3vw;
+}
+
+.goods_name {
+    font-size: 40rpx;
+    font-weight: 600;
+    color: white;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.goods_sail {
+    font-size: 30rpx;
+    font-weight: 500;
+    color: rgb(150,150,150);
+    margin-top: 0.5vh;
+    margin-bottom: 1vh;
+}
+
+.goods_price {
+    font-size: 40rpx;
+    font-weight: 600;
+    color: white;
+}
+
+
+.add_good {
+    margin-left: 2vw;
+    width: 8vw;
+    display: inline-block;
+}
+
+
+.buy_thing {
+    height: 8vh;
+    width: 85vw;
+    border-radius: 50rpx;
+    background-color: rgb(229, 229, 229);
+    position: fixed;
+    left: 7.5vw;
+    bottom: 1vh;
+    box-sizing: border-box;
+    padding-left: 5vw;
+    padding-top: 0.8vh;
+}
+
+.buy_thing_hide {
+    opacity: 0;
+}
+
+.minus {
+    width: 10vw;
+    display: inline-block;
+}
+
+.text_msg {
+    font-size: 37rpx;
+    font-weight: 500;
+    color: black;
+    display: inline-block;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    transform: translate(0,-45%);
+}
+
+.confirm {
+    margin-left: 12vw;
+    width: 25vw;
+    display: inline-block;
+    transform: translate(0,5%);
+}
+

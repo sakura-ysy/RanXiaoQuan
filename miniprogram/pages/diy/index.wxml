@@ -1,0 +1,12 @@
+<!--pages/diy/index.wxml-->
+<view class="all">
+    <view class="{{swap===1?'top_pic':'top_pic2'}}"></view>
+    <view class="{{swap===1?'mid_left':'mid_left2'}}"></view>
+    <view class="{{swap===1?'mid_right':'mid_right2'}}">
+        <image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/开始创作@4x.png" mode="widthFix" class="start"></image>
+    </view>
+    <image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/确定按钮@4x.png" mode="widthFix" class="{{swap===1?'btm1':'btm2'}}"
+    bindtap="change_mode"></image>
+    <image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 237.png" mode="widthFix" class="{{swap===1?'choose_pic1':'choose_pic12'}}" bindtap="in_photo"></image>
+    <image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 236.png" mode="widthFix" class="{{swap===1?'choose_pic2':'choose_pic22'}}" bindtap="in_blind"></image>
+</view>

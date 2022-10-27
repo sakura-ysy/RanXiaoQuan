@@ -1,0 +1,16 @@
+<image src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 88@4x.png" class="back" mode="widthFix" bindtap="jump"></image>
+<image class="pho" mode="widthFix" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/pic.png"></image>
+<image class="pic" mode="widthFix" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/拍照.png" bindtap="get_pic"></image>
+<image class="upload" mode="widthFix" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/上传.png" bindtap="get_upload"></image>
+<view class="note">注意：图片过大会导致上传失败，请上传的图片不要超过1w像素点！</view>
+<view class="{{is_modal===1?'modal':'modal_false'}}">
+
+    <view class="title">对您上传图片的处理结果如下</view>
+    <image src="{{cloud_img}}" class="result"></image>
+    <view class="btn">
+        <image class="cart" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 233.png" mode="widthFix" bindtap="in_cart"></image>
+        <image class="cancel" src="cloud://cloud1-3gv71ub62b32f113.636c-cloud1-3gv71ub62b32f113-1312049560/devImages/资源 232.png" mode="widthFix" bindtap="cancel"></image>
+    </view>
+</view>
+<view class="{{is_modal===1?'all_2':'all'}}">
+</view>
